@@ -10,7 +10,7 @@ const MobileHeaderContainer = styled.div`
   width: 100%;
   height: 67px;
   align-items: center;
-  padding: 21px;
+  padding: 0 7%;
 `;
 
 const MobileHeaderLogo = styled.div`

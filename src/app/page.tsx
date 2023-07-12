@@ -5,6 +5,7 @@ import styles from './page.module.css';
 import HeroSection from '@/components/HeroSection';
 import MobileHeader from '@/components/Header/MobileHeader';
 import HowItWorks from '@/components/HowItWorks';
+import WhatWeOffer from '@/components/WhatWeOffer';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <MobileHeader />
       <HeroSection />
       <HowItWorks />
+      <WhatWeOffer />
     </>
   );
 }

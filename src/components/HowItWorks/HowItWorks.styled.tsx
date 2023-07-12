@@ -7,9 +7,6 @@ const HowItWorksContainer = styled.div`
   align-items: center;
   width: 100%;
   background: #ffffff;
-  @media screen and (min-width: 1024px) {
-    width: 97%;
-  }
 `;
 
 const HowItWorksGridContainer = styled.div`
@@ -24,7 +21,7 @@ const HowItWorksGridContainer = styled.div`
     grid-template-columns: repeat(3, 1fr);
     width: 90%;
     justify-items: center;
-    margin-bottom: 200px;
+    margin-top: 100px;
   }
 `;
 

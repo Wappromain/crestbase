@@ -5,7 +5,7 @@ import { HowItWorksContainer, HowItWorksGridContainer, SectionTagLine } from './
 const HowItWorks = () => {
   return (
     <HowItWorksContainer>
-      <SectionTagLine>Our Benefits</SectionTagLine>
+      <SectionTagLine>How it Works</SectionTagLine>
       <HowItWorksGridContainer>
         <GridCard
           iconSrc='/images/how-it-works-house.png'
