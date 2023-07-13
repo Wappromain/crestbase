@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 interface StyleProps {
   isActive: boolean;
@@ -40,10 +40,13 @@ const AccordionTextContainer = styled.div<StyleProps>`
   padding: 20px;
   background-color: rgba(61, 121, 239, 0.06);
   border-radius: 2%;
-  /* overflow: hidden; */
-  /* max-height: ${({ isActive }) => (isActive ? '500px' : '0')};
-  transition: max-height 1s ease-in; */
-  /* transition-delay: ${({ isActive }) => (isActive ? '0s' : '0.3s')}; */
+  /* ${({ isActive }) =>
+    isActive &&
+    css`
+      max-height: 500px;
+      transition: max-height 1s ease-in;
+      transition-delay: 0s;
+    `} */
 `;
 
 const AccordionTextQuestion = styled.h3`
