@@ -7,6 +7,7 @@ import MobileHeader from '@/components/Header/MobileHeader';
 import HowItWorks from '@/components/HowItWorks';
 import WhatWeOffer from '@/components/WhatWeOffer';
 import Assets from '@/components/Assets';
+import FAQs from '@/components/FAQs';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <HowItWorks />
       <WhatWeOffer />
       <Assets />
+      <FAQs />
     </>
   );
 }
