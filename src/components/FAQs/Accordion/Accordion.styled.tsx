@@ -41,9 +41,9 @@ const AccordionTextContainer = styled.div<StyleProps>`
   background-color: rgba(61, 121, 239, 0.06);
   border-radius: 2%;
   /* overflow: hidden; */
-  max-height: ${({ isActive }) => (isActive ? '500px' : '50px')};
-  transition: max-height 1s ease-in;
-  /* transition-delay: ${({ isActive }) => (isActive ? '0s' : '1s')}; */
+  /* max-height: ${({ isActive }) => (isActive ? '500px' : '0')};
+  transition: max-height 1s ease-in; */
+  /* transition-delay: ${({ isActive }) => (isActive ? '0s' : '0.3s')}; */
 `;
 
 const AccordionTextQuestion = styled.h3`
@@ -56,6 +56,7 @@ const AccordionTextQuestion = styled.h3`
   color: #4f4f4f;
   cursor: pointer;
   width: 100%;
+  -webkit-tap-highlight-color: transparent;
 `;
 
 const AccordionTextAnswer = styled.p`
