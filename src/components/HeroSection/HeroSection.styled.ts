@@ -6,7 +6,7 @@ const HeroContainer = styled.div`
   flex-direction: column;
   width: 100%;
   background: #ffffff;
-  padding: 120px 0;
+  padding: 127px 0;
   justify-content: center;
   align-items: center;
 `;
@@ -27,7 +27,7 @@ const HeroLeftContainer = styled.div`
   flex-direction: column;
   width: 100%;
   box-sizing: border-box;
-  padding: 0 7%;
+  padding: 0 6%;
   @media ${device.tablet} {
     padding: 0 0 0 7%;
     width: 70%;
@@ -36,7 +36,7 @@ const HeroLeftContainer = styled.div`
 
 const HeroMainTextStart = styled.span`
   font-family: 'Merriweather';
-  font-size: 34px;
+  font-size: 32px;
   font-weight: 900;
   line-height: 47px;
   letter-spacing: 0px;
@@ -51,7 +51,7 @@ const HeroMainTextStart = styled.span`
 
 const HeroMainText = styled.p`
   font-family: 'Merriweather';
-  font-size: 34px;
+  font-size: 32px;
   font-weight: 900;
   line-height: 47px;
   letter-spacing: 0px;
@@ -73,6 +73,7 @@ const HeroSubText = styled.p`
   letter-spacing: 0em;
   text-align: left;
   color: #4f4f4f;
+  padding-top: 3%;
   @media ${device.tablet} {
     font-size: 22px;
     font-weight: 400;
@@ -84,8 +85,9 @@ const HeroDownloadButtons = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 80%;
+  width: 85%;
   padding-top: 2rem;
+  gap: 15px;
   @media ${device.tablet} {
     width: 40%;
   }
@@ -98,19 +100,19 @@ const HeroDownloadButtons = styled.div`
 `;
 
 const AppStoreButton = styled.img`
-  width: 47%;
+  width: 52%;
   height: 100%;
 `;
 
 const PlayStoreButton = styled.img`
-  width: 45%;
+  width: 50%;
   height: 100%;
 `;
 
 const HeroRightContainer = styled.div`
   display: flex;
   width: 100%;
-  margin-top: -30%;
+  margin-top: -35%;
   @media ${device.tablet} {
     width: 50%;
     margin-top: -10%;

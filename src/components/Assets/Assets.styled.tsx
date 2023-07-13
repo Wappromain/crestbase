@@ -1,29 +1,51 @@
 import { device } from '@/styles/global.styles';
 import styled from 'styled-components';
 
-const WhatWeOfferContainer = styled.div`
+const AssetsContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
   width: 100%;
   background: #ffffff;
   padding-top: 18%;
+  @media ${device.tablet} {
+    flex-direction: column;
+  }
 `;
 
-const WhatWeOfferGridContainer = styled.div`
+const ColumnReverse = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+`;
+
+const AssetsGridContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 60px;
-  width: 90%;
-  margin-top: 3rem;
+  gap: 43px;
+  margin-top: 64px;
+  width: 87%;
   /* width: 328px; */
-  @media ${device.laptop} {
+
+  @media ${device.tablet} {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 90%;
     justify-items: center;
+    margin-top: 100px;
+    align-items: stretch;
+  }
+
+  @media ${device.laptop} {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    justify-items: center;
+    margin-top: 100px;
   }
 `;
 
@@ -35,6 +57,10 @@ const SectionTagLine = styled.p`
   letter-spacing: 0px;
   text-align: center;
   color: #262c55;
+  margin-top: 19%;
+  @media ${device.tablet} {
+    margin-top: 0;
+  }
 `;
 
 const SectionDescriptorLine = styled.p`
@@ -51,4 +77,10 @@ const SectionDescriptorLine = styled.p`
   }
 `;
 
-export { WhatWeOfferContainer, WhatWeOfferGridContainer, SectionTagLine, SectionDescriptorLine };
+export {
+  AssetsContainer,
+  ColumnReverse,
+  AssetsGridContainer,
+  SectionTagLine,
+  SectionDescriptorLine,
+};

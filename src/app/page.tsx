@@ -6,6 +6,7 @@ import HeroSection from '@/components/HeroSection';
 import MobileHeader from '@/components/Header/MobileHeader';
 import HowItWorks from '@/components/HowItWorks';
 import WhatWeOffer from '@/components/WhatWeOffer';
+import Assets from '@/components/Assets';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <HeroSection />
       <HowItWorks />
       <WhatWeOffer />
+      <Assets />
     </>
   );
 }

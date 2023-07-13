@@ -20,15 +20,15 @@ const HeroSection = () => {
         <HeroLeftContainer>
           <div style={{ display: 'flex' }}>
             <HeroMainText>
-              <HeroMainTextStart>Endless &nbsp;</HeroMainTextStart>real estate possibilities for you
+              <HeroMainTextStart>Endless</HeroMainTextStart> {` `}real estate possibilities for you
             </HeroMainText>
           </div>
           <HeroSubText>
             Rent apartments, buy lands, buy properties, and book event halls easily with no hassle.
           </HeroSubText>
           <HeroDownloadButtons>
-            <AppStoreButton src='/icons/app-store-clickable.svg' />
             <PlayStoreButton src='/icons/play-store-clickable.svg' />
+            <AppStoreButton src='/icons/app-store-clickable.svg' />
           </HeroDownloadButtons>
         </HeroLeftContainer>
         <HeroRightContainer>
