@@ -124,7 +124,7 @@ const HeroPhoneImage = styled.img`
   width: 100%;
   height: 100%;
   @media ${device.tablet} {
-    content: url('/images/desktop-hero-phone-image.svg');
+    content: url('/images/desktop-hero-phone-image-2.svg');
   }
 `;
 
