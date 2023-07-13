@@ -30,7 +30,7 @@ const HeroLeftContainer = styled.div`
   padding: 0 6%;
   @media ${device.tablet} {
     padding: 0 0 0 7%;
-    width: 70%;
+    width: 80%;
   }
 `;
 
@@ -114,7 +114,7 @@ const HeroRightContainer = styled.div`
   width: 100%;
   margin-top: -35%;
   @media ${device.tablet} {
-    width: 50%;
+    width: 45%;
     margin-top: -10%;
     margin-bottom: -17%;
   }
@@ -122,9 +122,13 @@ const HeroRightContainer = styled.div`
 
 const HeroPhoneImage = styled.img`
   width: 100%;
-  height: 100%;
-  @media ${device.tablet} {
-    content: url('/images/desktop-hero-phone-image-2.svg');
+  /* max-width: 730px;
+  max-height: 625px; */
+  /* @media ${device.tablet} {
+    content: url('/images/tablet-hero-phone-image.svg');
+  } */
+  @media ${device.laptop} {
+    content: url('/images/desktop-phone-hero-image.svg');
   }
 `;
 

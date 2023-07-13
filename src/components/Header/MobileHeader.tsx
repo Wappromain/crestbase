@@ -1,17 +1,34 @@
 import React from 'react';
-import { MobileHeaderContainer, MobileHeaderLogo, MobileHeaderMenuIcon } from './Header.styled';
+import {
+  AppDownloadLink,
+  HeaderContainer,
+  HeaderLink,
+  HeaderLinksContainer,
+  HeaderLogo,
+  MobileHeaderMenuIcon,
+} from './Header.styled';
 import { HiOutlineMenuAlt4 } from 'react-icons/hi';
+import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 const MobileHeader = () => {
   return (
-    <MobileHeaderContainer>
-      <MobileHeaderLogo>
-        <img src='/icons/crestbase-logo.svg' alt='' width={129} height={29.3} />
-      </MobileHeaderLogo>
+    <HeaderContainer>
+      <a href='/'>
+        <HeaderLogo src='/images/crestbase-logo-footer.svg' alt='' />
+      </a>
       <MobileHeaderMenuIcon>
-        <HiOutlineMenuAlt4 width={40} height={40} />
+        <HiOutlineMenuAlt4 size={40} color='#262C55' strokeWidth={1} />
       </MobileHeaderMenuIcon>
-    </MobileHeaderContainer>
+      <HeaderLinksContainer>
+        <HeaderLink>How it works</HeaderLink>
+        <HeaderLink>What we offer</HeaderLink>
+        <HeaderLink>FAQs</HeaderLink>
+        <HeaderLink>
+          <AppDownloadLink src='/images/joint-download-button.svg' />
+        </HeaderLink>
+      </HeaderLinksContainer>
+    </HeaderContainer>
   );
 };
 

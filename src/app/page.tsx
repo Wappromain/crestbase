@@ -8,6 +8,7 @@ import HowItWorks from '@/components/HowItWorks';
 import WhatWeOffer from '@/components/WhatWeOffer';
 import Assets from '@/components/Assets';
 import FAQs from '@/components/FAQs';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <WhatWeOffer />
       <Assets />
       <FAQs />
+      <Footer />
     </>
   );
 }
