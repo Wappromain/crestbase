@@ -1,14 +1,143 @@
-import styled from "styled-components";
+import { device } from '@/styles/global.styles';
+import styled from 'styled-components';
+
 const HeroContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  background: #ffffff;
+  padding: 127px 0;
+  justify-content: center;
+  align-items: center;
 `;
 
-const HeroTextContainer = styled.div`
+const HeroOrientationContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  @media ${device.tablet} {
+    flex-direction: row;
+  }
 `;
 
-const HeroMainText = styled.p``;
+const HeroLeftContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 6%;
+  @media ${device.tablet} {
+    padding: 0 0 0 7%;
+    width: 70%;
+  }
+`;
+
+const HeroMainTextStart = styled.span`
+  font-family: 'Merriweather';
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 47px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #3d79ef;
+  @media ${device.tablet} {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 94px;
+  }
+`;
+
+const HeroMainText = styled.p`
+  font-family: 'Merriweather';
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 47px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #262c55;
+
+  @media ${device.tablet} {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 94px;
+  }
+`;
+
+const HeroSubText = styled.p`
+  font-family: 'DM Sans';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #4f4f4f;
+  padding-top: 3%;
+  @media ${device.tablet} {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 40px;
+  }
+`;
+
+const HeroDownloadButtons = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 85%;
+  padding-top: 2rem;
+  gap: 15px;
+  @media ${device.tablet} {
+    width: 40%;
+  }
+  @media screen and (min-width: 600px) and (max-width: 768px) {
+    width: 50% !important;
+  }
+  @media ${device.mobileL} {
+    width: 60%;
+  }
+`;
+
+const AppStoreButton = styled.img`
+  width: 52%;
+  height: 100%;
+`;
+
+const PlayStoreButton = styled.img`
+  width: 50%;
+  height: 100%;
+`;
+
+const HeroRightContainer = styled.div`
+  display: flex;
+  width: 100%;
+  margin-top: -35%;
+  @media ${device.tablet} {
+    width: 50%;
+    margin-top: -10%;
+    margin-bottom: -17%;
+  }
+`;
+
+const HeroPhoneImage = styled.img`
+  width: 100%;
+  height: 100%;
+  @media ${device.tablet} {
+    content: url('/images/desktop-hero-phone-image.svg');
+  }
+`;
+
+export {
+  HeroContainer,
+  HeroOrientationContainer,
+  HeroLeftContainer,
+  HeroMainTextStart,
+  HeroMainText,
+  HeroSubText,
+  HeroDownloadButtons,
+  AppStoreButton,
+  PlayStoreButton,
+  HeroRightContainer,
+  HeroPhoneImage,
+};
