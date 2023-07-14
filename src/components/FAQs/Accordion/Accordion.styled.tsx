@@ -1,5 +1,9 @@
 import styled, { css } from 'styled-components';
 
+interface StyleProps {
+  isActive: boolean;
+}
+
 const AccordionDiv = styled.div`
   width: 100%;
   display: flex;
@@ -29,13 +33,20 @@ const AccordionCardsLayout = styled.div`
   box-sizing: border-box;
 `;
 
-const AccordionTextContainer = styled.div`
+const AccordionTextContainer = styled.div<StyleProps>`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 20px;
   background-color: rgba(61, 121, 239, 0.06);
   border-radius: 2%;
+  /* ${({ isActive }) =>
+    isActive &&
+    css`
+      max-height: 500px;
+      transition: max-height 1s ease-in;
+      transition-delay: 0s;
+    `} */
 `;
 
 const AccordionTextQuestion = styled.h3`
