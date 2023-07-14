@@ -17,6 +17,7 @@ const OrientationContainer = styled.div`
   flex-direction: column;
   @media ${device.laptop} {
     flex-direction: row;
+    align-items: flex-start;
   }
 `;
 
@@ -53,7 +54,6 @@ const FooterEmail = styled.p`
   letter-spacing: 0em;
   text-align: left;
   color: #262c55;
-  border-bottom: 2px solid #262c55;
   padding-top: 24px;
 `;
 
@@ -70,6 +70,7 @@ const OtherLinksContainer = styled.div`
     width: 50%;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
+    margin-top: 0;
   }
 `;
 
@@ -111,10 +112,12 @@ const FooterDownloadContainer = styled.div`
   padding: 23px 20px;
   border-radius: 20px;
   background-color: #3d79ef;
-  width: 100%;
+  width: 60%;
   margin-top: 20px;
+  max-width: 300px;
   @media ${device.laptop} {
     width: 20%;
+    margin-top: 0;
   }
 `;
 
@@ -130,46 +133,24 @@ const FooterDownloadContainerText = styled.p`
 
 const DownloadButtons = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
   width: 100%;
-  padding-top: 2rem;
-
-  @media ${device.mobileL} {
-    width: 80%;
-  }
-  @media screen and (min-width: 600px) and (max-width: 768px) {
-    width: 60% !important;
-  }
-  @media ${device.tablet} {
-    width: 50%;
-  }
-  @media ${device.tabletL} {
-    width: 45%;
-  }
-  @media ${device.laptop} {
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
+  padding: 1rem 0;
 `;
 
 const AppStoreButton = styled.img`
-  width: 47%;
+  width: 92%;
   height: 100%;
-  @media ${device.laptop} {
-    width: 92%;
-  }
+  max-width: 180px;
 `;
 
 const PlayStoreButton = styled.img`
-  width: 45%;
+  width: 90%;
   height: 100%;
-  @media ${device.laptop} {
-    width: 90%;
-  }
+  max-width: 180px;
 `;
 
 const FooterCopyrightContainer = styled.div`
@@ -184,7 +165,7 @@ const FooterCopyrightContainer = styled.div`
 `;
 
 const CopyrightText = styled.p`
-  font-family: Lato;
+  font-family: 'DM Sans';
   font-size: 16px;
   font-weight: 500;
   line-height: 25px;

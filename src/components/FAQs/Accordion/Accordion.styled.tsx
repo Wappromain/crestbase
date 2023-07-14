@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 interface StyleProps {
-  isActive: boolean;
+  isactive: boolean;
 }
 
 const AccordionDiv = styled.div`
@@ -40,8 +40,8 @@ const AccordionTextContainer = styled.div<StyleProps>`
   padding: 20px;
   background-color: rgba(61, 121, 239, 0.06);
   border-radius: 2%;
-  /* ${({ isActive }) =>
-    isActive &&
+  /* ${({ isactive }) =>
+    isactive &&
     css`
       max-height: 500px;
       transition: max-height 1s ease-in;

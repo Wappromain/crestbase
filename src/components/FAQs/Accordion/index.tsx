@@ -35,7 +35,7 @@ const Accordion: FC<AccordionProps> = ({ items }) => {
       {items.map((item, index) => (
         <AccordionCards key={index}>
           <AccordionCardsLayout>
-            <AccordionTextContainer isActive={activeIndex === index}>
+            <AccordionTextContainer isactive={activeIndex === index}>
               <AccordionTextQuestion
                 className={`accordion-header ${activeIndex === index ? 'active' : ''}`}
                 onClick={() => handleClick(index)}

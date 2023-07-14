@@ -12,7 +12,7 @@ const FormContainer = styled.div`
 `;
 
 const FormHeader = styled.p`
-  font-family: Merriweather;
+  font-family: 'Merriweather';
   font-size: 22px;
   font-weight: 900;
   line-height: 54px;
