@@ -114,8 +114,8 @@ const HeroRightContainer = styled.div`
   width: 100%;
   margin-top: -35%;
   @media ${device.tablet} {
-    width: 45%;
-    margin-top: -10%;
+    width: 70%;
+    margin-top: -8%;
     margin-bottom: -17%;
   }
 `;
@@ -127,7 +127,7 @@ const HeroPhoneImage = styled.img`
   /* @media ${device.tablet} {
     content: url('/images/tablet-hero-phone-image.svg');
   } */
-  @media ${device.laptop} {
+  @media ${device.tablet} {
     content: url('/images/desktop-phone-hero-image.svg');
   }
 `;
