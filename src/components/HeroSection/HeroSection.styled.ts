@@ -102,11 +102,13 @@ const HeroDownloadButtons = styled.div`
 const AppStoreButton = styled.img`
   width: 52%;
   height: 100%;
+  max-width: 167px;
 `;
 
 const PlayStoreButton = styled.img`
   width: 50%;
   height: 100%;
+  max-width: 160px;
 `;
 
 const HeroRightContainer = styled.div`
