@@ -29,12 +29,20 @@ const WhatWeOfferGridContainer = styled.div`
 
 const SectionTagLine = styled.p`
   font-family: 'Merriweather';
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 900;
-  line-height: 47px;
+  line-height: 36px;
   letter-spacing: 0px;
-  text-align: center;
+  text-align: left;
   color: #262c55;
+  width: 90%;
+  padding: 0% 3%;
+  @media ${device.laptop} {
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 52px;
+    text-align: center;
+  }
 `;
 
 const SectionDescriptorLine = styled.p`
@@ -44,9 +52,10 @@ const SectionDescriptorLine = styled.p`
   line-height: 27px;
   letter-spacing: 0px;
   text-align: left;
-  width: 85%;
+  width: 90%;
+  padding: 0% 3%;
   color: #4f4f4f;
-  @media ${device.tablet} {
+  @media ${device.laptop} {
     text-align: center;
   }
 `;

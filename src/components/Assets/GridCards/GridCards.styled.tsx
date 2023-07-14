@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const GridCards = styled.div`
   box-sizing: border-box;
-  padding: 17% 3% 7% 3%;
+  padding: 10% 3% 7% 3%;
 
   width: 100%;
   /* height: 400px; */
@@ -28,6 +28,7 @@ const GridCardsLayout = styled.div`
   justify-content: space-between;
   width: 90%;
   gap: 10%;
+  padding-bottom: 10%;
   @media screen and (min-width: 1024px) {
     height: 80%;
   }

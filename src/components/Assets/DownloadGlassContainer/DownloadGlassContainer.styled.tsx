@@ -4,12 +4,11 @@ import styled from 'styled-components';
 const SectionContainer = styled.div`
   background-color: #ffffff;
   width: 100%;
-  padding-top: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
-  @media ${device.tablet} {
-    padding-top: 12%;
+  @media ${device.laptop} {
+    padding-top: 11%;
   }
 `;
 
@@ -115,7 +114,7 @@ const GlassContainerImage = styled.img`
   width: auto;
   height: 100%;
   @media ${device.tablet} {
-    content: url('/images/desktop-glass-container-image.svg');
+    content: url('/images/desktop-glass-container-image.png');
   }
 `;
 

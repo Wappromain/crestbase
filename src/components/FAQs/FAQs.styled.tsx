@@ -5,7 +5,7 @@ const FAQContainer = styled.div`
   display: flex;
   width: 100%;
   background-color: #ffffff;
-  padding-top: 19%;
+  padding-top: 13%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -13,12 +13,18 @@ const FAQContainer = styled.div`
 
 const SectionTagLine = styled.p`
   font-family: 'Merriweather';
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 900;
-  line-height: 47px;
+  line-height: 36px;
   letter-spacing: 0px;
   text-align: center;
   color: #262c55;
+  @media ${device.laptop} {
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 52px;
+    text-align: center;
+  }
 `;
 
 const FAQAccordionContainer = styled.div`

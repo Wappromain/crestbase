@@ -7,6 +7,8 @@ import {
   CardText,
   CardTextHeader,
   CardTextMessage,
+  CardIconDiv,
+  CardIconDownloadButton,
 } from './GridCards.styled';
 
 interface GridCardProps {
@@ -25,9 +27,12 @@ const GridCard: React.FC<GridCardProps> = ({ iconSrc, header, message, backgroun
             <CardTextHeader>{header}</CardTextHeader>
             <CardTextMessage>{message}</CardTextMessage>
           </CardText>
-          <div style={{ display: 'flex', alignSelf: 'flex-end' }}>
-            <CardIcon src={iconSrc} alt='' width={'100%'} height={'100%'} />
-          </div>
+          <CardIconDiv>
+            <CardIconDownloadButton>Download App</CardIconDownloadButton>
+            <div style={{ display: 'flex' }}>
+              <CardIcon src={iconSrc} alt='' width={'100%'} height={'100%'} />
+            </div>
+          </CardIconDiv>
         </CardValueBox>
       </GridCardsLayout>
     </GridCards>

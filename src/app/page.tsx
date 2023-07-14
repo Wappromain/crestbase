@@ -7,6 +7,7 @@ import WhatWeOffer from '@/components/WhatWeOffer';
 import Assets from '@/components/Assets';
 import FAQs from '@/components/FAQs';
 import Footer from '@/components/Footer';
+import ContactUs from '@/components/ContactUs';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Assets />
       <FAQs />
       <Footer />
+      <ContactUs />
     </>
   );
 }

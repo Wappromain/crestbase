@@ -1,3 +1,4 @@
+import { device } from '@/styles/global.styles';
 import styled from 'styled-components';
 
 const HowItWorksContainer = styled.div`
@@ -27,12 +28,20 @@ const HowItWorksGridContainer = styled.div`
 
 const SectionTagLine = styled.p`
   font-family: 'Merriweather';
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 900;
-  line-height: 47px;
+  line-height: 36px;
   letter-spacing: 0px;
-  text-align: center;
+  text-align: left;
   color: #262c55;
+  width: 90%;
+  padding: 0% 3%;
+  @media ${device.laptop} {
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 52px;
+    text-align: center;
+  }
 `;
 
 export { HowItWorksContainer, HowItWorksGridContainer, SectionTagLine };

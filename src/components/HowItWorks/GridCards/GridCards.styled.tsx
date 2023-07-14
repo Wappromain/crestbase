@@ -1,3 +1,4 @@
+import { device } from '@/styles/global.styles';
 import styled from 'styled-components';
 
 const GridCards = styled.div`
@@ -40,6 +41,9 @@ const CardValueBox = styled.div`
   padding: 0px;
   gap: 16px;
   width: 100%;
+  @media ${device.laptop} {
+    align-items: center;
+  }
 `;
 
 const CardIcon = styled.img``;
@@ -50,6 +54,9 @@ const CardText = styled.div`
   align-items: flex-start;
   padding: 20px 0px 10px;
   gap: 16px;
+  @media ${device.laptop} {
+    align-items: center;
+  }
 `;
 
 const CardTextHeader = styled.h3`
@@ -70,6 +77,9 @@ const CardTextMessage = styled.p`
   letter-spacing: 0px;
   text-align: left;
   color: #4f4f4f;
+  @media ${device.laptop} {
+    text-align: center;
+  }
 `;
 
 export {
