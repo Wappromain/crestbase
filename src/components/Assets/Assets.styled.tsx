@@ -3,15 +3,13 @@ import styled from 'styled-components';
 
 const AssetsContainer = styled.div`
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   background: #ffffff;
-  padding-top: 18%;
-  @media ${device.tablet} {
-    flex-direction: column;
-  }
+  padding-top: 80px;
+  padding-bottom: 80px;
 `;
 
 const ColumnReverse = styled.div`
@@ -20,8 +18,7 @@ const ColumnReverse = styled.div`
   width: 100%;
   justify-content: center;
   align-items: center;
-  padding-top: 15%;
-  @media ${device.laptop} {
+  @media ${device.tablet} {
     padding-top: 0;
   }
 `;

@@ -7,9 +7,7 @@ const SectionContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  @media ${device.laptop} {
-    padding-top: 11%;
-  }
+  padding-top: 130px;
 `;
 
 const GlassContainer = styled.div`

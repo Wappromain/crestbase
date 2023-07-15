@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { HiOutlineMenuAlt4 } from 'react-icons/hi';
 import {
   AppDownloadLink,
   HeaderContainer,
@@ -7,16 +8,32 @@ import {
   HeaderLogo,
   MobileHeaderMenuIcon,
 } from './Header.styled';
-import { HiOutlineMenuAlt4 } from 'react-icons/hi';
-import { useRouter } from 'next/router';
-import Link from 'next/link';
 import SidebarNav from './SidebarNav';
 
-const MobileHeader = () => {
+interface MobileHeaderProps {
+  howItWorksRef: React.RefObject<HTMLDivElement>;
+  whatWeOfferRef: React.RefObject<HTMLDivElement>;
+  assetsRef: React.RefObject<HTMLDivElement>;
+  faqsRef: React.RefObject<HTMLDivElement>;
+}
+
+const MobileHeader: React.FC<MobileHeaderProps> = ({
+  assetsRef,
+  howItWorksRef,
+  whatWeOfferRef,
+  faqsRef,
+}) => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
 
   const handleSidebarToggle = () => {
     setSidebarOpen(!isSidebarOpen);
+  };
+
+  const handleScrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: 'smooth' });
+      setSidebarOpen(false); // Close the sidebar after clicking a link
+    }
   };
 
   return (
@@ -27,11 +44,19 @@ const MobileHeader = () => {
       <MobileHeaderMenuIcon onClick={handleSidebarToggle}>
         <HiOutlineMenuAlt4 size={40} color='#262C55' strokeWidth={0.7} />
       </MobileHeaderMenuIcon>
-      <SidebarNav isSidebarOpen={isSidebarOpen} setSidebarOpen={setSidebarOpen} />
+      <SidebarNav
+        assetsRef={assetsRef}
+        howItWorksRef={howItWorksRef}
+        whatWeOfferRef={whatWeOfferRef}
+        faqsRef={faqsRef}
+        isSidebarOpen={isSidebarOpen}
+        setSidebarOpen={setSidebarOpen}
+      />
       <HeaderLinksContainer>
-        <HeaderLink>How it works</HeaderLink>
-        <HeaderLink>What we offer</HeaderLink>
-        <HeaderLink>FAQs</HeaderLink>
+        <HeaderLink onClick={() => handleScrollToSection(howItWorksRef)}>How it works</HeaderLink>
+        <HeaderLink onClick={() => handleScrollToSection(whatWeOfferRef)}>What we offer</HeaderLink>
+        <HeaderLink onClick={() => handleScrollToSection(assetsRef)}>Assets</HeaderLink>
+        <HeaderLink onClick={() => handleScrollToSection(faqsRef)}>FAQs</HeaderLink>
         <div>
           <AppDownloadLink src='/images/joint-download-button.svg' />
         </div>

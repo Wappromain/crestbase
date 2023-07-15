@@ -5,7 +5,8 @@ const FAQContainer = styled.div`
   display: flex;
   width: 100%;
   background-color: #ffffff;
-  padding-top: 13%;
+  padding-top: 80px;
+  padding-bottom: 80px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
