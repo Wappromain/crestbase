@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   AppDownloadLink,
   HeaderContainer,
@@ -10,23 +10,31 @@ import {
 import { HiOutlineMenuAlt4 } from 'react-icons/hi';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import SidebarNav from './SidebarNav';
 
 const MobileHeader = () => {
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
+
+  const handleSidebarToggle = () => {
+    setSidebarOpen(!isSidebarOpen);
+  };
+
   return (
     <HeaderContainer>
       <a href='/'>
         <HeaderLogo src='/images/crestbase-logo-footer.svg' alt='' />
       </a>
-      <MobileHeaderMenuIcon>
-        <HiOutlineMenuAlt4 size={40} color='#262C55' strokeWidth={1} />
+      <MobileHeaderMenuIcon onClick={handleSidebarToggle}>
+        <HiOutlineMenuAlt4 size={40} color='#262C55' strokeWidth={0.7} />
       </MobileHeaderMenuIcon>
+      <SidebarNav isSidebarOpen={isSidebarOpen} setSidebarOpen={setSidebarOpen} />
       <HeaderLinksContainer>
         <HeaderLink>How it works</HeaderLink>
         <HeaderLink>What we offer</HeaderLink>
         <HeaderLink>FAQs</HeaderLink>
-        <HeaderLink>
+        <div>
           <AppDownloadLink src='/images/joint-download-button.svg' />
-        </HeaderLink>
+        </div>
       </HeaderLinksContainer>
     </HeaderContainer>
   );
