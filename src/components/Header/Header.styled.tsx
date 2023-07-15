@@ -9,22 +9,25 @@ const HeaderContainer = styled.div`
   background-color: #ffffff;
   position: fixed;
   width: 100%;
-  height: 67px;
+  height: 68px;
   align-items: center;
   padding: 0 6%;
+  @media ${device.tabletL} {
+    height: 86px;
+  }
 `;
 
 const HeaderLogo = styled.img``;
 
 const MobileHeaderMenuIcon = styled.div`
-  @media ${device.tablet} {
+  @media ${device.tabletL} {
     display: none;
   }
 `;
 
 const HeaderLinksContainer = styled.div`
   display: none;
-  @media ${device.tablet} {
+  @media ${device.tabletL} {
     display: flex;
     flex-direction: row;
     align-items: center;

@@ -17,7 +17,8 @@ const SectionTagLine = styled.p`
   font-weight: 900;
   line-height: 36px;
   letter-spacing: 0px;
-  text-align: center;
+  text-align: left;
+  width: 90%;
   color: #262c55;
   @media ${device.laptop} {
     font-size: 28px;

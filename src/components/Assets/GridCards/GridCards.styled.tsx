@@ -22,16 +22,13 @@ const GridCards = styled.div`
 `;
 
 const GridCardsLayout = styled.div`
-  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 90%;
   gap: 10%;
-  padding-bottom: 10%;
-  @media screen and (min-width: 1024px) {
-    height: 80%;
-  }
+  padding-bottom: 7%;
+  padding-top: 30px;
 `;
 
 const CardValueBox = styled.div`

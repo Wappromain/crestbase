@@ -29,7 +29,7 @@ const DownloadGlassContainer = () => {
             </DownloadButtons>
           </TextContainer>
           <ImageContainer>
-            <GlassContainerImage src='/images/glass-container-image.svg' />
+            <GlassContainerImage src='/images/glass-container-image.png' />
           </ImageContainer>
         </ContentContainer>
       </GlassContainer>

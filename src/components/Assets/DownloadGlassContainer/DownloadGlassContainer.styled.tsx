@@ -27,6 +27,7 @@ const ContentContainer = styled.div`
   width: 90%;
   box-sizing: border-box;
   padding: 10% 0 0 0;
+  gap: 10px;
   @media ${device.tablet} {
     padding: 7% 0 0 0;
     flex-direction: row;
@@ -77,27 +78,21 @@ const DownloadButtons = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
-  padding-top: 2rem;
-  @media ${device.tablet} {
-    width: 40%;
-  }
-  @media screen and (min-width: 600px) and (max-width: 768px) {
-    width: 55% !important;
-  }
-  @media ${device.mobileL} {
-    width: 70%;
-  }
+  padding: 2rem 6% 0% 0%;
+  gap: 15px;
+  width: fit-content;
 `;
 
 const AppStoreButton = styled.img`
-  width: 47%;
+  width: 52%;
   height: 100%;
+  max-width: 167px;
 `;
 
 const PlayStoreButton = styled.img`
-  width: 45%;
+  width: 50%;
   height: 100%;
+  max-width: 160px;
 `;
 
 const ImageContainer = styled.div`
@@ -106,6 +101,10 @@ const ImageContainer = styled.div`
   padding-top: 19%;
   @media ${device.tablet} {
     width: 40%;
+    padding-top: 19%;
+  }
+  @media ${device.laptop} {
+    width: 40%;
     padding-top: 10%;
   }
 `;
@@ -113,7 +112,7 @@ const ImageContainer = styled.div`
 const GlassContainerImage = styled.img`
   width: auto;
   height: 100%;
-  @media ${device.tablet} {
+  @media ${device.laptop} {
     content: url('/images/desktop-glass-container-image.png');
   }
 `;

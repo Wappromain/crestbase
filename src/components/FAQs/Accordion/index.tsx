@@ -3,10 +3,13 @@ import {
   AccordionCards,
   AccordionCardsLayout,
   AccordionDiv,
+  AccordionQuestionContainer,
   AccordionTextAnswer,
   AccordionTextContainer,
   AccordionTextQuestion,
 } from './Accordion.styled';
+
+import { IoIosArrowUp, IoIosArrowDown } from 'react-icons/io';
 
 interface AccordionItem {
   question: string;
@@ -35,13 +38,20 @@ const Accordion: FC<AccordionProps> = ({ items }) => {
       {items.map((item, index) => (
         <AccordionCards key={index}>
           <AccordionCardsLayout>
-            <AccordionTextContainer isactive={activeIndex === index}>
-              <AccordionTextQuestion
-                className={`accordion-header ${activeIndex === index ? 'active' : ''}`}
-                onClick={() => handleClick(index)}
-              >
-                {item.question}
-              </AccordionTextQuestion>
+            <AccordionTextContainer>
+              <AccordionQuestionContainer>
+                <AccordionTextQuestion
+                  className={`accordion-header ${activeIndex === index ? 'active' : ''}`}
+                  onClick={() => handleClick(index)}
+                >
+                  {item.question}
+                </AccordionTextQuestion>
+                {activeIndex === index ? (
+                  <IoIosArrowUp size={15} color='#4A55D1' strokeWidth={1} />
+                ) : (
+                  <IoIosArrowDown size={15} color='#4A55D1' strokeWidth={1} />
+                )}
+              </AccordionQuestionContainer>
               {activeIndex === index && <AccordionTextAnswer>{item.answer}</AccordionTextAnswer>}
             </AccordionTextContainer>
           </AccordionCardsLayout>
