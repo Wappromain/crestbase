@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 interface StyleProps {
-  isactive: boolean;
+  isactive?: boolean;
 }
 
 const AccordionDiv = styled.div`
@@ -49,6 +49,12 @@ const AccordionTextContainer = styled.div<StyleProps>`
     `} */
 `;
 
+const AccordionQuestionContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+`;
+
 const AccordionTextQuestion = styled.h3`
   font-family: 'DM Sans';
   font-size: 16px;
@@ -79,6 +85,7 @@ export {
   AccordionCards,
   AccordionCardsLayout,
   AccordionTextContainer,
+  AccordionQuestionContainer,
   AccordionTextQuestion,
   AccordionTextAnswer,
 };

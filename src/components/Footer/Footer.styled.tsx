@@ -144,13 +144,13 @@ const DownloadButtons = styled.div`
 const AppStoreButton = styled.img`
   width: 92%;
   height: 100%;
-  max-width: 180px;
+  max-width: 167px;
 `;
 
 const PlayStoreButton = styled.img`
   width: 90%;
   height: 100%;
-  max-width: 180px;
+  max-width: 160px;
 `;
 
 const FooterCopyrightContainer = styled.div`

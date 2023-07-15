@@ -85,18 +85,9 @@ const HeroDownloadButtons = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 85%;
-  padding-top: 2rem;
+  padding: 2rem 6% 0% 0%;
   gap: 15px;
-  @media ${device.tablet} {
-    width: 40%;
-  }
-  @media screen and (min-width: 600px) and (max-width: 768px) {
-    width: 50% !important;
-  }
-  @media ${device.mobileL} {
-    width: 60%;
-  }
+  width: fit-content;
 `;
 
 const AppStoreButton = styled.img`
