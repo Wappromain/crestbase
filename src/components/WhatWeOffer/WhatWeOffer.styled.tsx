@@ -8,7 +8,8 @@ const WhatWeOfferContainer = styled.div`
   align-items: center;
   width: 100%;
   background: #ffffff;
-  padding-top: 18%;
+  padding-top: 80px;
+  padding-bottom: 80px;
 `;
 
 const WhatWeOfferGridContainer = styled.div`

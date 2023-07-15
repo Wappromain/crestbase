@@ -14,11 +14,29 @@ import { AiOutlineClose } from 'react-icons/ai';
 interface SidebarProps {
   isSidebarOpen: boolean;
   setSidebarOpen: (isOpen: boolean) => void;
+  howItWorksRef: React.RefObject<HTMLDivElement>;
+  whatWeOfferRef: React.RefObject<HTMLDivElement>;
+  faqsRef: React.RefObject<HTMLDivElement>;
+  assetsRef: React.RefObject<HTMLDivElement>;
 }
 
-const SidebarNav: FC<SidebarProps> = ({ isSidebarOpen, setSidebarOpen }) => {
+const SidebarNav: FC<SidebarProps> = ({
+  isSidebarOpen,
+  setSidebarOpen,
+  howItWorksRef,
+  whatWeOfferRef,
+  faqsRef,
+  assetsRef,
+}) => {
   const handleSidebarToggle = () => {
     setSidebarOpen(!isSidebarOpen);
+  };
+
+  const handleScrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: 'smooth' });
+      handleSidebarToggle();
+    }
   };
 
   return (
@@ -32,10 +50,14 @@ const SidebarNav: FC<SidebarProps> = ({ isSidebarOpen, setSidebarOpen }) => {
         </MobileHeaderMenuIcon>
       </SidebarHeader>
       <SidebarContent>
-        <SidebarLinks>How it works</SidebarLinks>
-        <SidebarLinks>What we offer</SidebarLinks>
-        <SidebarLinks>Assets</SidebarLinks>
-        <SidebarLinks>FAQs</SidebarLinks>
+        <SidebarLinks onClick={() => handleScrollToSection(howItWorksRef)}>
+          How it works
+        </SidebarLinks>
+        <SidebarLinks onClick={() => handleScrollToSection(whatWeOfferRef)}>
+          What we offer
+        </SidebarLinks>
+        <SidebarLinks onClick={() => handleScrollToSection(assetsRef)}>Assets</SidebarLinks>
+        <SidebarLinks onClick={() => handleScrollToSection(faqsRef)}>FAQs</SidebarLinks>
         <SidebarDownloadLink>
           <AppDownloadLink src='/images/joint-download-button.svg' />
         </SidebarDownloadLink>

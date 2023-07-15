@@ -31,11 +31,11 @@ const HeaderLinksContainer = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 75%;
+    width: 77%;
     justify-content: space-between;
   }
   @media ${device.laptop} {
-    width: 55%;
+    width: 65%;
   }
   @media ${device.laptopL} {
     width: 48%;
@@ -50,6 +50,7 @@ const HeaderLink = styled.p`
   letter-spacing: 0em;
   text-align: left;
   color: #262c55;
+  cursor: pointer;
 `;
 
 const AppDownloadLink = styled.img``;
