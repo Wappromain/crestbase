@@ -36,6 +36,9 @@ const FAQAccordionContainer = styled.div`
   gap: 43px;
   margin-top: 64px;
   width: 90%;
+  @media ${device.tablet} {
+    width: 70%;
+  }
 `;
 
 export { FAQContainer, SectionTagLine, FAQAccordionContainer };

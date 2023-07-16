@@ -36,40 +36,40 @@ const HeroLeftContainer = styled.div`
 
 const HeroMainTextStart = styled.span`
   font-family: 'Merriweather';
-  font-size: 32px;
+  font-size: calc(1rem + 3.5vw);
   font-weight: 900;
-  line-height: 47px;
+  line-height: (47px + 1.2vw);
   letter-spacing: 0px;
   text-align: left;
   color: #3d79ef;
-  @media ${device.tablet} {
-    font-size: 64px;
+  @media ${device.laptop} {
+    font-size: calc(1.3rem + 3.5vw);
     font-weight: 900;
-    line-height: 94px;
+    line-height: calc(40px + 3.5vw);
   }
 `;
 
 const HeroMainText = styled.p`
   font-family: 'Merriweather';
-  font-size: 32px;
+  font-size: calc(1rem + 3.5vw);
   font-weight: 900;
-  line-height: 47px;
+  line-height: calc(35px + 3vw);
   letter-spacing: 0px;
   text-align: left;
   color: #262c55;
 
-  @media ${device.tablet} {
-    font-size: 64px;
+  @media ${device.laptop} {
+    font-size: calc(1.3rem + 3.5vw);
     font-weight: 900;
-    line-height: 94px;
+    line-height: calc(40px + 3.5vw);
   }
 `;
 
 const HeroSubText = styled.p`
   font-family: 'DM Sans';
-  font-size: 16px;
+  font-size: calc(10px + 1vw);
   font-weight: 400;
-  line-height: 28px;
+  line-height: calc(20px + 1vw);
   letter-spacing: 0em;
   text-align: left;
   color: #4f4f4f;
@@ -93,13 +93,26 @@ const HeroDownloadButtons = styled.div`
 const AppStoreButton = styled.img`
   width: 52%;
   height: 100%;
-  max-width: 167px;
+  max-width: 126px;
+  @media ${device.mobileM} {
+    max-width: 137px;
+  }
+
+  @media ${device.tablet} {
+    max-width: 167px;
+  }
 `;
 
 const PlayStoreButton = styled.img`
   width: 50%;
   height: 100%;
-  max-width: 160px;
+  max-width: 121px;
+  @media ${device.mobileM} {
+    max-width: 130px;
+  }
+  @media ${device.tablet} {
+    max-width: 160px;
+  }
 `;
 
 const HeroRightContainer = styled.div`

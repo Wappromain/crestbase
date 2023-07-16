@@ -39,7 +39,7 @@ const AccordionTextContainer = styled.div<StyleProps>`
   align-items: flex-start;
   padding: 20px;
   background-color: rgba(61, 121, 239, 0.06);
-  border-radius: 2%;
+  border-radius: 8px;
   /* ${({ isactive }) =>
     isactive &&
     css`
