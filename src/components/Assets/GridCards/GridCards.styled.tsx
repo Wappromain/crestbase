@@ -19,6 +19,7 @@ const GridCards = styled.div`
 
   color: #333333;
   box-shadow: 0px 0px 50px 2px #0e04040f;
+  border-radius: 20px;
 `;
 
 const GridCardsLayout = styled.div`
@@ -27,8 +28,8 @@ const GridCardsLayout = styled.div`
   justify-content: space-between;
   width: 90%;
   gap: 10%;
-  padding-bottom: 7%;
-  padding-top: 30px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 `;
 
 const CardValueBox = styled.div`
@@ -36,7 +37,7 @@ const CardValueBox = styled.div`
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-  gap: 16px;
+  gap: 10px;
   width: 100%;
 `;
 
@@ -46,8 +47,8 @@ const CardText = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 20px 0px 10px;
-  gap: 16px;
+  padding: 5px 0px 5px;
+  gap: 10px;
 `;
 
 const CardTextHeader = styled.h3`
@@ -62,9 +63,9 @@ const CardTextHeader = styled.h3`
 
 const CardTextMessage = styled.p`
   font-family: 'DM Sans';
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 27px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 23px;
   letter-spacing: 0px;
   text-align: left;
   color: #4f4f4f;

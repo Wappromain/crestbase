@@ -7,7 +7,7 @@ const WhatWeOfferContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  background: #ffffff;
+  background: #f9fbff;
   padding-top: 80px;
   padding-bottom: 80px;
 `;

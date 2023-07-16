@@ -53,7 +53,7 @@ const CardText = styled.div`
   flex-direction: column;
   align-items: flex-start;
   padding: 20px 0px 10px;
-  gap: 16px;
+  gap: 6px;
   @media ${device.laptop} {
     align-items: center;
   }

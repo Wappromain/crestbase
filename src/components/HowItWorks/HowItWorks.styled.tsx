@@ -24,7 +24,7 @@ const HowItWorksGridContainer = styled.div`
     grid-template-columns: repeat(3, 1fr);
     width: 90%;
     justify-items: center;
-    margin-top: 100px;
+    margin-top: 40px;
   }
 `;
 
