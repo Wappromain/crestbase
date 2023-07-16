@@ -64,7 +64,7 @@ const CardIconDownloadButton = styled.p`
   text-align: left;
   text-decoration: underline;
   color: #ffffff;
-  padding: 0 0.7rem 1rem 0.7rem;
+  padding-right: 6px;
   @media ${device.laptop} {
     font-size: 14px;
     line-height: 20px;

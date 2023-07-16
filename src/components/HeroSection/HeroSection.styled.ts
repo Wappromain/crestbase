@@ -6,7 +6,7 @@ const HeroContainer = styled.div`
   flex-direction: column;
   width: 100%;
   background: #ffffff;
-  padding: 127px 0;
+  padding: 127px 0 0 0;
   justify-content: center;
   align-items: center;
 `;
@@ -36,22 +36,22 @@ const HeroLeftContainer = styled.div`
 
 const HeroMainTextStart = styled.span`
   font-family: 'Merriweather';
-  font-size: calc(1rem + 3.5vw);
+  font-size: calc(1.2rem + 3.5vw);
   font-weight: 900;
-  line-height: (47px + 1.2vw);
+  line-height: calc(47px + 1.2vw);
   letter-spacing: 0px;
   text-align: left;
   color: #3d79ef;
   @media ${device.laptop} {
     font-size: calc(1.3rem + 3.5vw);
     font-weight: 900;
-    line-height: calc(40px + 3.5vw);
+    line-height: calc(45px + 3.5vw);
   }
 `;
 
 const HeroMainText = styled.p`
   font-family: 'Merriweather';
-  font-size: calc(1rem + 3.5vw);
+  font-size: calc(1.2rem + 3.5vw);
   font-weight: 900;
   line-height: calc(35px + 3vw);
   letter-spacing: 0px;
@@ -61,13 +61,13 @@ const HeroMainText = styled.p`
   @media ${device.laptop} {
     font-size: calc(1.3rem + 3.5vw);
     font-weight: 900;
-    line-height: calc(40px + 3.5vw);
+    line-height: calc(45px + 3.5vw);
   }
 `;
 
 const HeroSubText = styled.p`
   font-family: 'DM Sans';
-  font-size: calc(10px + 1vw);
+  font-size: calc(12px + 1vw);
   font-weight: 400;
   line-height: calc(20px + 1vw);
   letter-spacing: 0em;
@@ -93,9 +93,9 @@ const HeroDownloadButtons = styled.div`
 const AppStoreButton = styled.img`
   width: 52%;
   height: 100%;
-  max-width: 126px;
+  max-width: 129px;
   @media ${device.mobileM} {
-    max-width: 137px;
+    max-width: 146px;
   }
 
   @media ${device.tablet} {
@@ -106,9 +106,9 @@ const AppStoreButton = styled.img`
 const PlayStoreButton = styled.img`
   width: 50%;
   height: 100%;
-  max-width: 121px;
+  max-width: 122px;
   @media ${device.mobileM} {
-    max-width: 130px;
+    max-width: 140px;
   }
   @media ${device.tablet} {
     max-width: 160px;

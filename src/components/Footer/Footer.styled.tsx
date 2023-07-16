@@ -70,7 +70,7 @@ const OtherLinksContainer = styled.div`
     width: 50%;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
-    margin-top: 0;
+    margin-top: 5px;
   }
 `;
 
