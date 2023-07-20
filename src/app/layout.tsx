@@ -4,11 +4,6 @@ import Footer from '@/components/Footer';
 import '../styles/globals.css';
 import MobileHeader from '@/components/Header/MobileHeader';
 
-const metadata = {
-  title: 'Crestbase',
-  description: 'Crestbase Site',
-};
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
