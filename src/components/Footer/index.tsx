@@ -17,7 +17,11 @@ import {
   FooterEmail,
   FooterCopyrightContainer,
   CopyrightText,
+  ImageLink,
+  PolicyContainer,
 } from './Footer.styled';
+
+import { BsDot } from 'react-icons/bs';
 
 const index = () => {
   return (
@@ -25,38 +29,22 @@ const index = () => {
       <OrientationContainer>
         <CrestbaseInfoContainer>
           <FooterImage src='/images/crestbase-logo-footer.svg' />
-          <FooterAddress>4, olubusola street, off Akande Ishaga Lagos</FooterAddress>
-          <FooterEmail>developer.mycrestbase@gmail.com</FooterEmail>
         </CrestbaseInfoContainer>
         <OtherLinksContainer>
           <LinksContainer>
-            <LinkHeader>COMPANY</LinkHeader>
-            <LinkChild>Home</LinkChild>
-            <LinkChild>About</LinkChild>
-            <LinkChild>Team</LinkChild>
-          </LinksContainer>
-          <LinksContainer>
-            <LinkHeader>LEGAL</LinkHeader>
-            <LinkChild>Privacy Policy</LinkChild>
-            <LinkChild>Terms & Condition</LinkChild>
-          </LinksContainer>
-          <LinksContainer>
-            <LinkHeader>HELP</LinkHeader>
-            <LinkChild>Contact</LinkChild>
-            <LinkChild>FAQs</LinkChild>
+            <ImageLink src='/images/twitter-link.svg' />
+            <ImageLink src='/images/facebook-link.svg' />
+            <ImageLink src='/images/instagram-link.svg' />{' '}
+            <ImageLink src='/images/LinkedIn-link.svg' />
           </LinksContainer>
         </OtherLinksContainer>
-        <FooterDownloadContainer>
-          <FooterDownloadContainerText>
-            Endless real estate possibilities
-          </FooterDownloadContainerText>
-          <DownloadButtons>
-            <PlayStoreButton src='/icons/play-store-clickable.svg' />
-            <AppStoreButton src='/icons/app-store-clickable.svg' />
-          </DownloadButtons>
-        </FooterDownloadContainer>
       </OrientationContainer>
       <FooterCopyrightContainer>
+        <PolicyContainer>
+          <LinkChild>Terms of Use</LinkChild>
+          <BsDot size={17} color='#262C55' />
+          <LinkChild>Privacy Policy</LinkChild>
+        </PolicyContainer>
         <CopyrightText>Copyright @Crestbase, 2023</CopyrightText>
       </FooterCopyrightContainer>
     </FooterContainer>

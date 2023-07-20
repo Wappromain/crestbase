@@ -18,6 +18,7 @@ const OrientationContainer = styled.div`
   @media ${device.laptop} {
     flex-direction: row;
     align-items: flex-start;
+    justify-content: space-between;
   }
 `;
 
@@ -58,25 +59,21 @@ const FooterEmail = styled.p`
 `;
 
 const OtherLinksContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  width: 100%;
+  display: flex;
+  width: max-content;
   justify-items: center;
   margin-top: 50px;
   align-items: start;
   justify-items: start;
-  row-gap: 20px;
   @media ${device.laptop} {
-    width: 50%;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
     margin-top: 5px;
   }
 `;
 
 const LinksContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 20px;
   align-items: flex-start;
   justify-content: center;
 `;
@@ -100,7 +97,11 @@ const LinkChild = styled.p`
   letter-spacing: 0em;
   text-align: left;
   color: #262c55;
-  padding-bottom: 24px;
+`;
+
+const ImageLink = styled.img`
+  width: 32px;
+  height: auto;
 `;
 
 const FooterDownloadContainer = styled.div`
@@ -156,12 +157,26 @@ const PlayStoreButton = styled.img`
 const FooterCopyrightContainer = styled.div`
   width: 90%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
   padding: 39px 0;
   border-top: 1px solid #011b3366;
   margin-top: 50px;
+  gap: 18px;
+  @media ${device.laptop} {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+`;
+
+const PolicyContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
 `;
 
 const CopyrightText = styled.p`
@@ -185,11 +200,13 @@ export {
   LinksContainer,
   LinkHeader,
   LinkChild,
+  ImageLink,
   FooterDownloadContainer,
   FooterDownloadContainerText,
   DownloadButtons,
   AppStoreButton,
   PlayStoreButton,
   FooterCopyrightContainer,
+  PolicyContainer,
   CopyrightText,
 };
