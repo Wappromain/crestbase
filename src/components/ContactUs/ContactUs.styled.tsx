@@ -141,19 +141,24 @@ const FormMessageText = styled.textarea`
 
 const FormSubmitbutton = styled.button`
   width: 100%;
-  height: 60px;
+  height: 50px;
   border-radius: 10px;
   border: 0.6px;
   background-color: #262c55;
   border: 0.6px solid #0e040480;
 
   font-family: 'DM Sans';
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0px;
   text-align: center;
   color: #ffffff;
+
+  @media ${device.desktop} {
+    height: 60px;
+    font-size: 20px;
+  }
 `;
 
 export {

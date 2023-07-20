@@ -17,7 +17,7 @@ const HeroOrientationContainer = styled.div`
   width: 100%;
   justify-content: center;
   align-items: center;
-  @media ${device.tablet} {
+  @media ${device.laptop} {
     flex-direction: row;
   }
 `;
@@ -28,9 +28,9 @@ const HeroLeftContainer = styled.div`
   width: 100%;
   box-sizing: border-box;
   padding: 0 6%;
-  @media ${device.tablet} {
+  @media ${device.laptop} {
     padding: 0 0 0 6%;
-    width: 80%;
+    width: 76%;
   }
 `;
 
@@ -119,7 +119,15 @@ const HeroRightContainer = styled.div`
   display: flex;
   width: 100%;
   margin-top: -35%;
+  justify-content: center;
   @media ${device.tablet} {
+    width: 100%;
+    margin: 0;
+    margin-top: -22%;
+    margin-right: -19%;
+    margin-bottom: -10%;
+  }
+  @media ${device.laptop} {
     width: 70%;
     margin-top: -8%;
     margin-bottom: -17%;
@@ -128,12 +136,13 @@ const HeroRightContainer = styled.div`
 
 const HeroPhoneImage = styled.img`
   width: 100%;
-  /* max-width: 730px;
-  max-height: 625px; */
-  /* @media ${device.tablet} {
-    content: url('/images/tablet-hero-phone-image.svg');
-  } */
+
   @media ${device.tablet} {
+    content: url('/images/tablet-hero-phone-image.svg');
+    width: 100%;
+  }
+  @media ${device.laptop} {
+    margin-left: -14% !important;
     content: url('/images/desktop-phone-hero-image.svg');
   }
 `;
