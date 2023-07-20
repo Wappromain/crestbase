@@ -60,7 +60,7 @@ const SidebarMenu = styled.div`
   flex-direction: column;
   position: fixed;
   top: 0;
-  left: -100%;
+  left: -100vw;
   width: 100vw;
   height: 100vh;
   background-color: #ffffff;
@@ -68,6 +68,10 @@ const SidebarMenu = styled.div`
 
   &.open {
     left: 0;
+  }
+
+  @media ${device.laptop} {
+    display: none;
   }
 `;
 
