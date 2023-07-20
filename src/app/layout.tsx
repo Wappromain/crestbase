@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import '../styles/globals.css';
 import MobileHeader from '@/components/Header/MobileHeader';
 
-export const metadata = {
+const metadata = {
   title: 'Crestbase',
   description: 'Crestbase Site',
 };
