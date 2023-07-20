@@ -9,6 +9,7 @@ import FAQs from '@/components/FAQs';
 import Footer from '@/components/Footer';
 import ContactUs from '@/components/ContactUs';
 import { useRef } from 'react';
+import RootLayout from './layout';
 
 const Home: React.FC = () => {
   const howItWorksRef = useRef<HTMLDivElement>(null);
@@ -43,7 +44,6 @@ const Home: React.FC = () => {
       <div ref={faqsRef}>
         <FAQs />
       </div>
-      <Footer />
       <ContactUs />
     </>
   );

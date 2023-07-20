@@ -29,7 +29,7 @@ const HeroLeftContainer = styled.div`
   box-sizing: border-box;
   padding: 0 6%;
   @media ${device.tablet} {
-    padding: 0 0 0 7%;
+    padding: 0 0 0 6%;
     width: 80%;
   }
 `;
