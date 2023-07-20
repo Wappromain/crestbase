@@ -74,6 +74,7 @@ const HeroSubText = styled.p`
   text-align: left;
   color: #4f4f4f;
   padding-top: 3%;
+  width: 90%;
   @media ${device.tablet} {
     font-size: 22px;
     font-weight: 400;
